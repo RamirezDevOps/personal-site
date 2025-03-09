@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+    line-height: 1.8;
+}
+
+nav {
+    background: #ffe8d6;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px #00000014;
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #6d6875;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #f28e8e;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-family: serif;
+    text-transform: uppercase;
+    color: #8eb5f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: serif;
+    font-weight: 700;
+    color: #6d6875;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+picture img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0000001a;
+}
+
+.content {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.container li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #f28e8e;
+    font-size: 1.3rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.flex-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.flex-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flex-text {
+    flex: 1;
+    max-width: 50%;
+}
